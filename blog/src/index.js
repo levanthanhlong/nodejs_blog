@@ -5,6 +5,11 @@ const handlebars = require('express-handlebars').engine;
 const app = express();
 const port = 3000;
 const route = require('./routes');
+const db = require('./config/db');
+
+//connect to mongoDb
+db.connect();
+
 
 // HTTP logger
 app.use(morgan('combined'));

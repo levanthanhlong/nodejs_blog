@@ -9,16 +9,13 @@
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
- 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/levanthanhlong/nodejs_blog.git"
   },
-  
   "keywords": [
     "blog",
     "node",
@@ -32,7 +29,8 @@
   },
   "homepage": "https://github.com/levanthanhlong/nodejs_blog#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4"
   },
   "devDependencies": {
     "express-handlebars": "^7.0.7",
