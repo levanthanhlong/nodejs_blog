@@ -13,14 +13,14 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
-  express.urlencoded({
+    express.urlencoded({
     extended: true,
-  }),
+    }),
 );
 app.use(
-  express.json({
+    express.json({
     deprecated: true,
-  }),
+    }),
 );
 
 // template handlebars
@@ -33,5 +33,5 @@ route(app);
 
 // add port
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`);
+    console.log(`Example app listening on port http://localhost:${port}`);
 });
