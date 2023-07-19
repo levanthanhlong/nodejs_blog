@@ -1,0 +1,5 @@
+git add .
+git commit -m "connect db"
+npm run beautiful
+git branch -M main
+git push -u origin main

@@ -17,6 +17,7 @@ app.use(morgan('combined'));
 // file static
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use(
     express.urlencoded({
         extended: true,
@@ -31,12 +32,12 @@ app.use(
 // template handlebars
 app.engine('.hbs', handlebars({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set('views', path.join(__dirname, 'resources','views'));
 
 // route init
 route(app);
 
 // add port
 app.listen(port, () => {
-    console.log(`Example app listening on port http://localhost:${port}`);
+    console.log(`app listening on port http://localhost:${port}`);
 });
